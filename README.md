@@ -4,13 +4,6 @@
 
 Welcome to the Collaborative Story Writing Platform! This project allows users to collaboratively write and edit stories in real-time. Users can contribute to stories, provide feedback, and view previous versions of each story.
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSONWebTokens&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Table of Contents
 
@@ -42,8 +35,8 @@ Welcome to the Collaborative Story Writing Platform! This project allows users t
   - JWT for authentication and authorization
   - Mongoose for MongoDB schema modeling
 
-- **Frontend:**
-  - React.js (optional, but recommended for a complete full-stack project)
+- **Frontend:** (Only in the future)
+  - React.js
   - TypeScript
   - Redux or Context API for state management
   - Socket.io-client for real-time updates
@@ -52,14 +45,14 @@ Welcome to the Collaborative Story Writing Platform! This project allows users t
   - Docker for containerization
   - Jest for testing
   - ESLint and Prettier for code quality and formatting
-  - SendGrid or similar service for email notifications
+  - SendGrid  for email notifications
 
 ## Setup
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/collaborative-story-writing-platform.git
-    cd collaborative-story-writing-platform
+    git clone https://github.com/rason-developer/Tellers
+    cd Tellers/Server
     ```
 
 2. Install dependencies:
@@ -68,17 +61,17 @@ Welcome to the Collaborative Story Writing Platform! This project allows users t
     ```
 
 3. Set up environment variables:
-    Create a `.env` file in the root directory and add the following:
+    Create a `.env` file in the root directory(Server directory) and add the following:
     ```env
     MONGO_URI=your_mongodb_uri
     JWT_SECRET=your_jwt_secret
-    SOCKET_PORT=your_socket_port
+    SERVER_PORT= Your server port
     EMAIL_API_KEY=your_sendgrid_api_key
     ```
 
 4. Start the server:
     ```sh
-    npm run dev
+    npm run dev or npm start
     ```
 
 5. (Optional) To run the project with Docker:
@@ -86,12 +79,13 @@ Welcome to the Collaborative Story Writing Platform! This project allows users t
     docker-compose up
     ```
 
-## Usage
+## Usage Test BackEnd
 
-- Open your browser and navigate to `http://localhost:your_port` to access the platform.
-- Sign up and create a new story.
-- Invite others to collaborate and start writing together in real-time.
-- Use the admin dashboard to manage users and monitor story contributions.
+- Go to https://www.postman.com/
+- Sign up and create a new workspace.
+- Use the endpoints.txt in docs to guide trough the multiple endpoints.
+- To test the websocket you need to install wscat
+- Then establish a connection with wscat -c ws://localhost:PORT
 
 ## Contributing
 
