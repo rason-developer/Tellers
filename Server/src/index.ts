@@ -9,6 +9,7 @@ const app = express();
 
 app.use(cors());
 app.use(morgan("tiny"));
+app.use (express.json());
 
 const server = http.createServer(app);
 
