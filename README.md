@@ -1,6 +1,6 @@
 
 ```markdown
-# Collaborative Story Writing Platform
+# Tellers
 
 Welcome to the Collaborative Story Writing Platform! This project allows users to collaboratively write and edit stories in real-time. Users can contribute to stories, provide feedback, and view previous versions of each story.
 
