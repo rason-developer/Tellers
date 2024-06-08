@@ -43,7 +43,7 @@ project-root
 │   │
 │   ├── middlewares
 │   │   └── authMiddleware.ts
-│   │
+│   │   └── loggerMiddleware.ts
 │   ├── websocket
 │   │   └── index.ts
 │   │   └── events.ts
