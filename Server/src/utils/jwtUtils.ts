@@ -15,5 +15,3 @@ export const generateToken = (user:any) =>  {
     );
 };
 
-// TODO middleware for authorization and authentication
-// TODO Route and Controller for User
